@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <style>
+            #main
+            {
+                width:400px;
+                height: 400px;
+                margin: auto;
+                border:  2px solid black;
+                box-shadow: 2px 2px 3px 3px grey;
+                position: relative;
+                /* overflow: hidden; */
+                /* transform: translateX(); */
+                
+            }
+            .slider
+            {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+       <div id="main">
+          <img src="https://picsum.photos/id/237/400/400" alt="" class="slider">
+          <img src="https://picsum.photos/id/238/400/400" alt="" class="slider">
+          <img src="https://picsum.photos/id/239/400/400" alt="" class="slider">
+          <img src="https://picsum.photos/id/236/400/400" alt="" class="slider">
+       </div>
+        <button onclick="next()">next</button>
+        <script src="slider.js"></script>
+    </body>
+</html>

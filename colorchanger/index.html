@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Color changer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+    <style>
+        #main {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box {
+            width: 14%;
+            height: 183px;
+            border-radius: 5px;
+            border: 2px solid black;
+            cursor: pointer;
+
+        }
+        #box1
+        {
+            background-color: blue;
+        }
+        #box2
+        {
+            background-color: red;
+        }
+        #box3
+        {
+            background-color: purple;
+        }
+        #box4
+        {
+            background-color: orange;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Color Changer</h1>
+    <div id="main">
+        <div class="box" id="box1" onclick="change(event)"></div>
+        <div class="box" id="box2" onclick="change(event)"></div>
+        <div class="box" id="box3" onclick="change(event)"></div>
+        <div class="box" id="box4" onclick="change(event)"></div>
+    </div>
+    <script src="colorchange.js"></script>
+</body>
+
+</html>

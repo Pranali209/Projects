@@ -1,0 +1,186 @@
+*
+{
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+#main
+{
+    width:100%;
+    height: 100vh;
+    background-color:#A9A9A9 ;
+    padding: 36px;
+}
+.box
+{
+    width:88%;
+    height: 490px;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+}
+.weatherImage
+{
+    width:60%;
+    height:490px;
+    position: relative; 
+   
+}
+.weatherData
+{
+    width: 40%;
+    background-color: white;
+    height:490px; 
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
+    
+    
+}
+.weatherImage img{
+    width:100%;
+    height:490px; 
+  
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    object-fit: cover;
+}
+.weatherImage h2{
+    position: absolute;
+    top:138px;
+    left:98px;
+    text-align: center;
+    
+}
+.weatherImage input
+{
+    position: absolute;
+    top: 187px;
+    left: 185px;
+    width: 40%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    border:none;
+    padding: 5px;
+}
+.postion
+{
+    position: absolute;
+    top: 191px;
+    left: 397px;
+}
+.weatherImage input::placeholder
+{
+    color: black;
+}
+.weatherdeg
+{
+    width:91%;
+    height: 200px;
+    box-shadow: 2px 2px 5px 2px gray;
+    border-radius: 2px;
+    margin: 20px;
+    padding: 20px;
+    background-image: url('image/cloud.jpg');
+    background-size:cover;
+}
+.weatherdeg h1{
+   
+    font-size:55px;
+    
+}
+.weaterStatus{
+    margin-left: 3px;
+    margin-top: 5px;
+    font-size: 33px;
+  
+   
+}
+.weatherSunnyImage
+{
+    width: 39%;
+    height: 67px;
+    object-fit: cover;
+  
+}
+#Location
+{
+    height: 48px;
+    width: 22%;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: white;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    position: absolute;
+    top:20px;
+    left: 20px;
+    padding: 7px;
+    
+   
+}
+#Location span{
+    font-size: 20px;
+    
+}
+.locationName
+{
+    position: absolute;
+    top: 3px;
+    left: 35px;
+}
+
+#Location p{
+    font-size: 8px;
+    margin-left: 30px;
+}
+
+.Mondayweather
+{
+    width:20%;
+    height: 100px;
+    box-shadow: 2px 2px 5px 2px gray;
+    margin: 9px;
+    position: relative;
+    background-image: url('image/cloudys.png');
+    background-size: cover;
+    font-size: 15px;
+    
+}
+
+
+
+.Mondayweather h5{
+    position: absolute;
+    top: 66px;
+    left: 4px;
+    font-size: 11px;
+
+}
+
+.Mondayweather p{
+    position: absolute;
+    top: 18px;
+    left: 2px;
+    font-size: 19px;
+
+}
+
+.nature
+{
+    width: 80%;
+    height: 50px;
+    object-fit: cover;
+    position: absolute;
+    top: 25px;
+}
+.weeklydata
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
