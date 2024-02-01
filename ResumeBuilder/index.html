@@ -14,7 +14,7 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- custom css -->
-    <link rel = "stylesheet" href = "Resume.css">
+    <link rel = "stylesheet" href = "style.css">
 </head>
 <body>
     
@@ -37,20 +37,19 @@
                             <a class = "nav-link dropdown-toggle text-blue fs-18" href = "#" id = "navbarDropdown" role = "button" data-bs-toggle="dropdown" aria-expanded="false">Resume Templates</a>
                             <ul class="dropdown-menu bg-white" aria-labelledby="navbarDropdown">
                                 <li>
-                                    <a class = "dropdown-item" href = "#">Basic</a>
+                                    <a class = "dropdown-item" href = "#basicResumeTemplate">Basic</a>
                                 </li>
                                 <li>
-                                    <a class = "dropdown-item" href = "#">College</a>
+                                    <a class = "dropdown-item" href = "#CollegeResumeTemplate">College</a>
                                 </li>
                             </ul>
                         </li>
                     </ul>
-
-                    <button type = "button" class = "btn btn-login btn-primary ms-lg-4 px-4 fs-18 mt-3 mt-lg-0">Login/Register</button>
+                    <button type = "button"  onclick="window.location.href='SignIn.html'" class = "btn btn-login btn-primary ms-lg-4 px-4 fs-18 mt-3 mt-lg-0">Login/Register</button>
                 </div>
             </div>
         </nav>
-
+   
         <div class="header-banner">
             <div class="container h-100 d-flex align-items-center justify-content-center">
                 <div class = "row text-center justify-content-center">
@@ -62,7 +61,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="MainDiv">
         <section class = "steps py-8">
             <div class="container">
                 <div class = "row section-title text-center">
@@ -115,18 +114,18 @@
                     </div>
                 </div>
 
-                <div class = "row templates-list gy-5 gx-lg-5">
+                <div class = "row templates-list gy-5 gx-lg-5" id="basicResumeTemplate">
                     <div class = "templates-item position-relative col-lg-6">
                         <div class = "template-item-img mx-auto me-lg-0 position-relative">
                             <img src = "Images/Basic.jpg" alt = "" class = "img-fluid">
-                            <a href = "#" class = "btn btn-lg btn-primary position-absolute choose-template-btn">Select Template</a>
+                            <a href = "basictemplete.html" class = "btn btn-lg btn-primary position-absolute choose-template-btn">Select Template</a>
                         </div>
                     </div>
 
-                    <div class = "templates-item position-relative col-lg-6">
+                    <div class = "templates-item position-relative col-lg-6" id="CollegeResumeTemplate">
                         <div class = "template-item-img mx-auto ms-lg-0 position-relative">
                             <img src = "Images/College.jpg" alt = "" class = "img-fluid">
-                            <a href = "#" class = "btn btn-lg btn-primary position-absolute choose-template-btn">Select Template</a>
+                            <a href = "basictemplete.html" class = "btn btn-lg btn-primary position-absolute choose-template-btn">Select Template</a>
                         </div>
                     </div>
                 </div>
@@ -157,7 +156,7 @@
                             <a href = "#" class = "text-decoration-none fs-17 text-dark">CV Builder</a>
                         </li>
                         <li class = "my-2">
-                            <a href = "#" class = "text-decoration-none fs-17 text-dark">CV Templates</a>
+                            <a href = "#basicResumeTemplate" class = "text-decoration-none fs-17 text-dark">CV Templates</a>
                         </li>
                         <li class = "my-2">
                             <a href = "#" class = "text-decoration-none fs-17 text-dark">Login</a>
@@ -195,5 +194,6 @@
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>

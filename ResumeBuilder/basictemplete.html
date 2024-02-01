@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build CV</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- google fonts - inter font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-2" href="index.html">
+                <span>
+                    <i class="fa-solid fa-file-invoice"></i>
+                </span>
+                <span class="navbar-brand-text">Build</span> CV
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <button type="button" onclick="window.location.href='index.html'"
+                    class="btn btn-login btn-primary ms-lg-4 px-4 fs-18 mt-3 mt-lg-0">Home</button>
+                <button type="button" onclick="printtheresume()"
+                    class="btn btn-login btn-primary ms-lg-4 px-4 fs-18 mt-3 mt-lg-0">Download</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="BasicTemplate">
+
+        <div class="details py-20">
+            <h2 class="fs-20 ">Basic Template</h2>
+            <hr class="mx">
+            <form class="Resume-info">
+                <h3 class="fs-20 fw-7  mx my">Personal Details</h3>
+                <div class="persondets">
+                    <div>
+                        <label>Wanted Job Title</label>
+                        <input type="text" name="JobName" placeholder="Eg:Teacher">
+                    </div>
+                    <div>
+                        <label>Upload Image</label>
+                        <input type="file" name="Pimage" accept="image/*" id="Pimage">
+
+                    </div>
+
+                </div>
+                <div class="persondets">
+                    <div>
+                        <label>First Name</label>
+                        <input type="text" name="Fname" placeholder="First Name">
+                    </div>
+                    <div>
+                        <label>Last Name</label>
+                        <input type="text" name="Lname" placeholder="Last Name">
+                    </div>
+
+                </div>
+                <div class="persondets">
+                    <div>
+                        <label>Email</label>
+                        <input type="email" name="EmailId" placeholder="Email">
+                    </div>
+                    <div><label>Phone</label>
+                        <input type="number" name="PhoneNumber" placeholder="P.no">
+                    </div>
+
+                </div>
+                <div class="persondets">
+                    <div>
+                        <label>Country</label>
+                        <input type="text" name="Country" placeholder="Country">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="City" placeholder="City">
+                    </div>
+
+                </div>
+
+                <h3 class="fs-20 fw-7  mx my"> Employment History</h3>
+                <div class="WordDets mx">
+
+                    Show your relevant experience (last 10 years).
+                    Use bullet points to note your achievements, if possible - use numbers/facts...
+                </div>
+
+                <div class="persondets">
+                    <div>
+                        <label>Job Title</label>
+                        <input type="text" name="JobTitle" placeholder="Job Title">
+                    </div>
+                    <div>
+                        <label>Comapany Name</label>
+                        <input type="text" name="Cname" placeholder="Comapany">
+                    </div>
+                </div>
+                <div class="persondets">
+                    <div>
+                        <label>Start And End date</label>
+                        <input type="date" name="WStartDate" placeholder="MM/YYYY" id="wdate"
+                            style="width:49%; display: inline;">
+                        <input type="date" name="WEndDate" placeholder="MM/YYYY" id="wdate"
+                            style="width:49%; display: inline;">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="CompanyCity" placeholder="City">
+                    </div>
+                </div>
+                <div>
+                    <label class="mx">Description</label>
+                    <textarea class="mx Wdesctextarea my-2" id="" cols="57" rows="7" name="workExp"
+                        placeholder="Eg:Passinate Science teacher with 7+ year of Experince"></textarea>
+                </div>
+                <h3 class="fs-20 fw-7  mx my">Professional Summary</h3>
+                <div class="WordDets mx my-2">
+                    Write 2-4 short & energetic sentences to interest the reader! Mention your role,
+                    experience & most importantly - your biggest achievements, best qualities and skills.
+                </div>
+                <div class="marginTop">
+                    <label class="mx">Description</label>
+                    <textarea class="mx Wdesctextarea my-2" id="" cols="57" rows="7" name="summary"
+                        placeholder="Eg:Passinate Science teacher with 7+ year of Experince"></textarea>
+                </div>
+
+                <h3 class="fs-20 fw-7  mx my">Education</h3>
+                <div class="WordDets mx my-2">
+                    A varied education on your resume sums up the value that your learnings and background will bring to
+                    job.
+                </div>
+                <div class="persondets">
+                    <div>
+                        <label>College</label>
+                        <input type="text" name="ClgName" placeholder="College Name">
+                    </div>
+                    <div>
+                        <label>Degree</label>
+                        <input type="text" name="Degree" placeholder="Degree">
+                    </div>
+                </div>
+                <div class="persondets">
+                    <div>
+                        <label>Start And End date</label>
+                        <input type="date" name="EStartDate" placeholder="MM/YYYY" id="wdate"
+                            style="width:49%; display: inline;">
+                        <input type="date" name="EEndDate" placeholder="MM/YYYY" id="wdate"
+                            style="width:49%; display: inline;">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="educationCity" placeholder="City">
+                    </div>
+                </div>
+                <div>
+                    <label class="mx">Description</label>
+                    <textarea class="mx Wdesctextarea my-2" id="" cols="57" rows="7" name="EdcExp"
+                        placeholder="Eg:Graduated with High Honors"></textarea>
+                </div>
+                <h3 class="fs-20 fw-7  mx my">Websites & Social Link</h3>
+                <div class="WordDets mx my-2">
+                    You can add links to websites you want hiring managers to see!
+                    It will be a link to your portfolio,Or a LinkedIn profile, or personal website
+                </div>
+                <div class="persondets">
+                    <div>
+                        <label>Label</label>
+                        <input type="text" name="LinkName" placeholder="Eg:LinkedIn">
+                    </div>
+                    <div>
+                        <label>Link</label>
+                        <input type="text" name="Link" placeholder="Link">
+                    </div>
+                </div>
+                <h3 class="fs-20 fw-7  mx my">Skills</h3>
+                <div class="WordDets mx my-2">
+                    Choose 5 important skills that show you fit the position.
+                     Make sure they match the key skills mentioned in the job listing 
+                     (especially when applying via an online system).
+                </div>
+                <div class="marginTop">
+                    <label class="mx">Description</label>
+                    <textarea class="mx Wdesctextarea my-2" id="" cols="57" rows="7" name="Skills"
+                        placeholder="Mention ur Top skills separte each with comma,...."></textarea>
+                </div>
+                
+                
+            </form>
+            <div class="center-btn">
+                <button  onclick="ShowInfo()" class="btn btn-lg btn-primary mx-40 my choose-template-btn">Preview  Resume</button>
+            </div>
+        </div>
+        <div class="previewresume">
+             <div class="resume-container"></div>
+        </div>
+        <main class="main-content">
+          
+        </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.3/jspdf.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+        crossorigin="anonymous"></script>
+        <script src="script.js" async defer></script>
+    
+</body>
