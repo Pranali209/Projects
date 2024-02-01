@@ -16,7 +16,7 @@ loginBtn.addEventListener('click', () => {
 
 const ResumeBox = document.querySelector(".previewresume");
 const formData = document.querySelector(".Resume-info");
-const  FormdetailsBox = document.querySelector(".details");
+const FormdetailsBox = document.querySelector(".details");
 const ResumeDisplayBox=  document.querySelector(".previewresume")
 const mainbox = document.querySelector(".main-content")
 
