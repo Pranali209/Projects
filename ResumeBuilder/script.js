@@ -9,31 +9,32 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
- document.getElementById("btnsignIn").addEventListener("click" , ()=>{
+document.getElementById("btnsignIn").addEventListener("click", () => {
 
-    window.location.href='index.html'
- });
+    window.location.href = 'index.html'
+});
 
-const ResumeBox = document.querySelector(".previewresume");
-const formData = document.querySelector(".Resume-info");
-const FormdetailsBox = document.querySelector(".details");
-const ResumeDisplayBox=  document.querySelector(".previewresume")
-const mainbox = document.querySelector(".main-content")
+
 
 function ShowInfo(params) {
-    
-    const startYear = new Date(formData["WStartDate"].value).getFullYear();
-    const endYear = new Date (formData["WEndDate"].value).getFullYear();
-  
-   const  EstartYear = new Date(formData["EStartDate"].value).getFullYear();
-   const EendYear = new Date (formData["EEndDate"].value).getFullYear();
+    const formData = document.querySelector(".Resume-info");
+    const ResumeBox = document.querySelector(".previewresume");
 
- 
-   const skillsPoint = formData["Skills"].value.split(",")
-   let liElements = '';
-   for (let i = 0; i < skillsPoint.length; i++) {
-    liElements += `<li><p class="skill-title">${skillsPoint[i]}</p></li>`;
-} 
+    const FormdetailsBox = document.querySelector(".details");
+    const ResumeDisplayBox = document.querySelector(".previewresume")
+    const mainbox = document.querySelector(".main-content")
+    const startYear = new Date(formData["WStartDate"].value).getFullYear();
+    const endYear = new Date(formData["WEndDate"].value).getFullYear();
+
+    const EstartYear = new Date(formData["EStartDate"].value).getFullYear();
+    const EendYear = new Date(formData["EEndDate"].value).getFullYear();
+
+
+    const skillsPoint = formData["Skills"].value.split(",")
+    let liElements = '';
+    for (let i = 0; i < skillsPoint.length; i++) {
+        liElements += `<li><p class="skill-title">${skillsPoint[i]}</p></li>`;
+    }
     FormdetailsBox.style.display = "none";
     ResumeDisplayBox.style.display = "none"
     mainbox.style.opacity = "1"
@@ -42,9 +43,9 @@ function ShowInfo(params) {
     <section class="left-section">
     <div class="left-content">
     <div class="profile">
-        <img src=${reader.result} alt="">
+        <img src="" alt="">
     </div>
-    <h2 class="name">${formData["Fname"].value + ' '+ formData["Lname"].value}</h2>
+    <h2 class="name">${formData["Fname"].value + ' ' + formData["Lname"].value}</h2>
      <p class="career">${formData["JobName"].value}</p>
     </div>
     <div class="contact-info">
@@ -60,7 +61,7 @@ function ShowInfo(params) {
            </li>
            <li>
            <i class="fa fa-map-marker"></i>
-           ${formData["Country"].value + ' '+ formData["City"].value}
+           ${formData["Country"].value + ' ' + formData["City"].value}
        </li>
        <li>
        <i class="fa-brands fa-linkedin"></i>
@@ -88,7 +89,7 @@ function ShowInfo(params) {
         <div class="timeline">
             <div class="left-tl-content">
                 <h5 class="tl-title"> ${formData["Cname"].value}</h5>
-                <p class="para"> ${startYear +'-'+ endYear}</p>
+                <p class="para"> ${startYear + '-' + endYear}</p>
             </div>
             <div class="right-tl-content">
                 <div class="tl-content">
@@ -106,7 +107,7 @@ function ShowInfo(params) {
     <div class="timeline">
         <div class="left-tl-content">
             <h5 class="tl-title"> ${formData["ClgName"].value} </h5>
-            <p class="para"> ${EstartYear +'-'+ EendYear}</p>
+            <p class="para"> ${EstartYear + '-' + EendYear}</p>
         </div>
         <div class="right-tl-content">
             <div class="tl-content">
@@ -122,6 +123,6 @@ function ShowInfo(params) {
 `
 
 }
- function printtheresume(params) {
-   window.print()
- }
+function printtheresume(params) {
+    window.print()
+}
